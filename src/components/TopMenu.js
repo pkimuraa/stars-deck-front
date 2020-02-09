@@ -3,10 +3,10 @@ import "../css/tailwind.css";
 
 
 
-function SideMenu() {
+function TopMenu() {
   return (
     <div className="bg-gray-200 h-screen w-full pl-10  pt-16">
-      <div className="side-menu__header w-full"> 
+      <div className="w-full"> 
         <div className="text-4xl text-brand"> Stars Deck</div>
       </div>
       <div className="mt-10 w-full">
@@ -22,5 +22,5 @@ function SideMenu() {
   )
 }
 
-export default SideMenu;
+export default TopMenu;
 

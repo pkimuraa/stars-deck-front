@@ -20,7 +20,7 @@ input{
 }
 
 .btn{
-  padding: .25em 1em;
+  padding: .25em 1.25em;
   background-color: #5E4F9C;
   color: white;
   border-radius: 5px;
@@ -30,5 +30,8 @@ input{
   &:hover{
     background-color: white;
     color: #5E4F9C;
+  }
+  &.large{
+    padding: .5em .25em
   }
 }

@@ -9,7 +9,7 @@ function UserCard() {
   async function getData(){
     try{
       const res = await axios.get(
-        'http://localhost:4444/users', {crossdomain: true}       
+        'http://localhost:4444/users'
         );
       console.log(res);
       setUser(res);

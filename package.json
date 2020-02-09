@@ -7,7 +7,9 @@
     "node-sass": "^4.13.1",
     "react": "^16.8",
     "react-dom": "^16.8",
-    "react-scripts": "2.1.5"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "2.1.5",
+    "react-service-worker": "^0.1.1"
   },
   "scripts": {
     "build:css": "postcss tailwindcss/tailwind.src.css -o src/css/tailwind.css",
