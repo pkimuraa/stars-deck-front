@@ -20,11 +20,11 @@ function Events(props) {
           <div className="w-full text-4xl text-brand"> Próximos eventos</div>
         </div>
         <div className="w-full mt-4 flex flex-wrap justify-between">
-          {isLoading && "loading..."}
+      {/*     {isLoading && "loading..."}
           {!isLoading &&
             events.map(e => (
               <EventCard participants={e.participants} title={e.title} />
-            ))}
+            ))} */}
         </div>
       </div>
     </div>
