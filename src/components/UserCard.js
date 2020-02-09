@@ -1,32 +1,27 @@
-import React,{useState, useEffect} from "react";
-import "../css/tailwind.css";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-
 
 function UserCard() {
   const [user, setUser] = useState({});
 
-  async function getData(){
-    try{
-      const res = await axios.get(
-        'http://localhost:4444/users'
-        );
+  async function getData() {
+    try {
+      const res = await axios.get("http://localhost:4444/users");
       console.log(res);
       setUser(res);
-    } catch(err) {
+    } catch (err) {
       console.log(err);
     }
   }
 
   useEffect(() => {
-    getData();  
-  });  
+    getData();
+  });
   return (
     <div className="w-1/5 h-32 bg-warn">
       <div className="overlay"></div>
     </div>
-  )
+  );
 }
 
 export default UserCard;
-

@@ -1,6 +1,4 @@
 import React from "react";
-import "../css/tailwind.css";
-
 
 function ActionBar() {
   return (
@@ -13,8 +11,7 @@ function ActionBar() {
         <button className="w-full btn"> Criar novo evento</button>
       </div>
     </div>
-  )
+  );
 }
 
 export default ActionBar;
-

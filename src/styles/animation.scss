@@ -1,0 +1,26 @@
+.slide-tl {
+  -webkit-animation: slide-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s 5
+    both;
+  animation: slide-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s 5 both;
+}
+
+@-webkit-keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(-100px);
+    transform: translateY(-100px) translateX(-100px);
+  }
+}
+@keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px) translateX(-100px);
+    transform: translateY(-100px) translateX(-100px);
+  }
+}
