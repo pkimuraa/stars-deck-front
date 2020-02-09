@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/tailwind.css";
 import SideMenu from "../components/SideMenu";
 import UserCard from "../components/UserCard";
@@ -6,7 +6,12 @@ import "../App.scss"
 
 
 
-function Ranking() {
+function Ranking(props) {
+
+  useEffect(() => {
+    props.setMenuActive(3);
+  })
+
   return (
     <div className="w-full h-screen font-family flex flex-wrap">
       <div className="w-1/4">

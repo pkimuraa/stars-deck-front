@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/tailwind.css";
 import SideMenu from "../components/SideMenu";
 import ActionBar from "../components/ActionBar";
@@ -7,7 +7,12 @@ import "../App.scss"
 
 
 
-function Events() {
+function Events(props) {
+
+  useEffect(() => {
+    props.setMenuActive(1);
+  })
+
   return (
     <div className="w-full h-screen font-family flex flex-wrap">
       <div className="w-1/4">
