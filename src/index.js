@@ -1,8 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import Routes from "./routes"
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import registerServiceWorker from 'react-service-worker';
+import PageLayout from './components/PageLayout';
 
 
 ReactDOM.render(
