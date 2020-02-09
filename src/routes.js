@@ -16,7 +16,6 @@ const Routes = () =>{
       <Route exact path='/proximos-eventos' component={() => <Events menuActive={menuActive} setMenuActive={setMenuActive} />} />
       <Route exact path='/ranking' component={() => <Ranking menuActive={menuActive} setMenuActive={setMenuActive} />} />
       <Route exact path='/meu-perfil' component={() => <Profile menuActive={menuActive} setMenuActive={setMenuActive} />} />
-
   </Router>
   )
 }

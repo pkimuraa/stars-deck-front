@@ -1,5 +1,7 @@
 import React from "react";
 import "../css/tailwind.css";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -10,12 +12,12 @@ function SideMenu() {
         <div className="text-4xl text-brand"> Stars Deck</div>
       </div>
       <div className="mt-10 w-full">
-        <div className="flex flex-wrap">
-          <a href="/" className="w-full mb-5 text-brand">Próximos eventos</a>
-          <a href= "/novo-evento" className="w-full mb-5 text-brand">Criar novo evento</a>
-          <a href= "/ranking" className="w-full mb-5 text-brand">Ranking</a>
-          <a href= "/meu-perfil" className="w-full mb-5 text-brand">Meu Perfil</a>
-          <a href= "#" className="w-full mb-5 text-warn">Log Out</a>
+        <div className="flex flex-wrap"> 
+          <Link to="/proximos-eventos" className="w-full mb-5 text-brand"> Próximos eventos </Link>
+          <Link to="/novo-evento" className="w-full mb-5 text-brand"> Criar novo evento </Link>
+          <Link to="/ranking" className="w-full mb-5 text-brand"> Ranking </Link>
+          <Link to="/meu-perfil" className="w-full mb-5 text-brand"> Meu Perfil </Link>
+          <Link to="/" className="w-full mb-5 text-warn"> Log Out </Link>
         </div>
       </div>
     </div>
