@@ -39,34 +39,44 @@ function NewEvent(props) {
             Qual será seu próximo evento?
           </div>
         </div>
-        <form onSubmit={onSubmit} className="w-full flex flex-wrap">
-          <div className="w-full">
+        <form onSubmit={onSubmit} className="w-full flex flex-wrap justify-between mt-4">
+          <div className="md:w-5/10 mb-2">
+            <div className="w-full mb-2">Nome do Evento</div>
             <input
+              className="w-full"
               type="text"
               value={title}
               onChange={e => setTitle(e.target.value)}
             ></input>
           </div>
-          <div className="w-full">
+          <div className="md:w-5/10  mb-2">
+            <div className="w-full mb-2">Quando vai acontecer?</div>
             <input
+              className="w-full"
+              placeholder="dd/mm/aaaa"
               type="text"
               value={ocurringDate}
               onChange={e => setOcurringDate(e.target.value)}
             ></input>
           </div>
-          <div className="w-full">
-            <select
+          <div className="w-5/10  mb-2">
+          <div className="w-full mb-2">Qual tipo do evento?</div>
+            <select 
+              className="large w-full"
               type="text"
               value={type}
               onChange={e => setType(e.target.value)}
             >
-              <option selected="selected">escolhe</option>
+              <option selected="selected">Escolha uma das opções</option>
               {eventType.map(e => (
                 <option value={e._id}>{e.title}</option>
               ))}
             </select>
-            <div className="w-full">
+          </div>
+          <div className="w-5/10  mb-2">
+            <div className="w-full mb-2">Responsável:</div>
               <select
+                className="w-full large"
                 type="text"
                 value={user}
                 onChange={e => setUser(e.target.value)}
@@ -76,20 +86,21 @@ function NewEvent(props) {
                   <option value={u._id}>{u.github_username}</option>
                 ))}
               </select>
-            </div>
-            <div className="w-full">
+          </div>
+            <div className="w-5/10">
+            <div className="w-full mb-2">Fale um pouco mais!</div>
               <input
+                className="w-full"
                 type="text"
                 value={description}
                 onChange={e => setDescription(e.target.value)}
               ></input>
             </div>
             <div className="w-full">
-              <button type="submit" className="btn">
+              <button type="submit" className="btn w-3/8 mt-4">
                 Criar!
               </button>
             </div>
-          </div>
         </form>
       </div>
     </div>

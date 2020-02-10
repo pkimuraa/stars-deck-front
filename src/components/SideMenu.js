@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function SideMenu() {
   return (
-    <div className="bg-gray-200 h-screen w-full pl-10  pt-16">
+    <div className="bg-gray-200 h-screen w-full pl-10 hidden pt-16 md:block">
       <div className="side-menu__header w-full">
         <div className="text-4xl text-brand"> Stars Deck</div>
       </div>

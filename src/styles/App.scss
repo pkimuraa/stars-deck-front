@@ -5,7 +5,7 @@
   font-family: "Rubik", sans-serif;
 }
 
-input {
+input, select {
   border: 1px solid #5e4f9c;
   border-radius: 5px;
   padding: 0.25em 0.5em;
@@ -17,6 +17,12 @@ input {
   ::placeholder {
     color: #c4c4c4;
   }
+  &.large{
+    padding: .5em;
+  }
+}
+select{
+  background: transparent;
 }
 
 .btn {
@@ -39,4 +45,10 @@ input {
 .icon-active {
   border-bottom: 2px solid #5e4f9c;
   border-radius: 1px;
+}
+
+.elipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

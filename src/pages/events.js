@@ -16,7 +16,7 @@ function Events(props) {
   return (
     <div className="w-full h-screen font-family flex flex-wrap">
       <PageLayout />
-      <div className="w-3/4 pl-20 mt-16 pr-32">
+      <div className=" w-19/20 md:w-3/4 pl-8 md:pl-20 mt-32 md:mt-16 md:pr-32">
         <ActionBar />
         <div className="w-full mt-8">
           <div className="w-full text-4xl text-brand"> Próximos eventos</div>
@@ -27,7 +27,7 @@ function Events(props) {
             events.map(e => (
               <Link
                 to={`/eventos/${e._id}`}
-                className="w-9/20 bg-gray-200 flex mb-10 p-4 pt-10 pb-10 shadow"
+                className="w-full md:w-9/20 bg-gray-200 flex mb-10 p-4 pt-10 pb-10 shadow"
               >
                 <EventCard
                   participants={e.participants}
