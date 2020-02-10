@@ -33,14 +33,14 @@ function NewEvent(props) {
   return (
     <div className="w-full h-screen font-family flex flex-wrap">
       <PageLayout />
-      <div className="w-3/4 pl-20 mt-16 pr-32">
+      <div className=" w-19/20 md:w-3/4 pl-4 md:pl-20 mt-24 md:mt-16 md:pr-32">
         <div className="w-full flex justify-between flex-wrap mt-8">
-          <div className="w-13/18 text-4xl text-brand">
+          <div className="w-full md:w-13/18 text-4xl text-brand">
             Qual será seu próximo evento?
           </div>
         </div>
         <form onSubmit={onSubmit} className="w-full flex flex-wrap justify-between mt-4">
-          <div className="md:w-5/10 mb-2">
+          <div className="w-full md:w-5/10 mb-2">
             <div className="w-full mb-2">Nome do Evento</div>
             <input
               className="w-full"
@@ -49,7 +49,7 @@ function NewEvent(props) {
               onChange={e => setTitle(e.target.value)}
             ></input>
           </div>
-          <div className="md:w-5/10  mb-2">
+          <div className=" w-full md:w-5/10  mb-2">
             <div className="w-full mb-2">Quando vai acontecer?</div>
             <input
               className="w-full"
@@ -59,7 +59,7 @@ function NewEvent(props) {
               onChange={e => setOcurringDate(e.target.value)}
             ></input>
           </div>
-          <div className="w-5/10  mb-2">
+          <div className=" w-full md:w-5/10  mb-2">
           <div className="w-full mb-2">Qual tipo do evento?</div>
             <select 
               className="large w-full"
@@ -73,7 +73,7 @@ function NewEvent(props) {
               ))}
             </select>
           </div>
-          <div className="w-5/10  mb-2">
+          <div className=" w-full md:w-5/10  mb-2">
             <div className="w-full mb-2">Responsável:</div>
               <select
                 className="w-full large"
@@ -87,7 +87,7 @@ function NewEvent(props) {
                 ))}
               </select>
           </div>
-            <div className="w-5/10">
+          <div className=" w-full md:w-5/10  mb-2">
             <div className="w-full mb-2">Fale um pouco mais!</div>
               <input
                 className="w-full"
@@ -97,7 +97,7 @@ function NewEvent(props) {
               ></input>
             </div>
             <div className="w-full">
-              <button type="submit" className="btn w-3/8 mt-4">
+              <button type="submit" className="btn w-full md:w-3/8 mt-4 mb-10 md:mb-0">
                 Criar!
               </button>
             </div>
